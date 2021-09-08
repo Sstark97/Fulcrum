@@ -1,12 +1,14 @@
 import React from "react";
 import { View, Text, Image, Pressable } from "react-native";
+import filmStyles from "../assets/styles/FilmCardStyle";
 
 const FilmsCard = ({ film }) => {
 
     return(
-        <View>
-            <Image source={`episode${film.episode_id}.png`} />
-            <View>
+        <View style={filmStyles.container}>
+            {/* <Image source={`episode${film.episode_id}.png`} /> */}
+            <Text>Prueba</Text>
+            <View style={filmStyles.dataContainer}>
                 <Text>{film.title}</Text>
                 <Text>{film.director}</Text>
                 <Text>{film.producer}</Text>

@@ -5,7 +5,7 @@ import FilmsStack from './src/Stacks/FilmsStack';
 export default function App() {
   return (
     <NavigationContainer>
-      <ExampleStack />
+      <FilmsStack />
     </NavigationContainer>
   );
 }

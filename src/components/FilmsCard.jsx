@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, Pressable, StyleSheet } from "react-native";
 import colors from "../utils/colors";
+import imageId from "../utils/imageId";
 
 const FilmsCard = ({ film, navigation }) => {
     const filmDetail = film.url;
@@ -11,7 +12,7 @@ const FilmsCard = ({ film, navigation }) => {
 
     return(
         <Pressable onPress={handlePress} style={filmStyles.container}>
-            <Image style={filmStyles.filmImage} source={{uri:`https://starwars-visualguide.com/assets/img/films/${film.episode_id}.jpg`}} />
+            <Image style={filmStyles.filmImage} source={{uri:`https://starwars-visualguide.com/assets/img/films/${imageId[film.episode_id]}.jpg`}} />
             <View style={filmStyles.dataContainer}>
                 <Text style={filmStyles.text}>Title: {film.title}</Text>
                 <Text style={filmStyles.text}>Director: {film.director}</Text>

@@ -4,7 +4,10 @@ const colors = {
     zircon: "#3a4049",
     picton: "#3c6fc8",
     carmine: "#ef6372",
-    white: "#fff"
+    white: "#fff",
+    tangerine: "#ED8B01",
+    banana: "#FFE81F",
+    black: "#000"
   };
   
   export default colors;

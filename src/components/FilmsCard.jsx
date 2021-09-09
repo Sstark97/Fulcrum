@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, Pressable, StyleSheet } from "react-native";
-// import filmStyles from "../assets/styles/FilmCardStyle";
+import colors from "../utils/colors";
 
 const FilmsCard = ({ film, navigation }) => {
     const filmDetail = film.url;
@@ -44,7 +44,7 @@ const filmStyles = StyleSheet.create({
         resizeMode: 'contain',
     },
     text:{
-        color: "#fff",
+        color: colors.white,
     }
 });
 

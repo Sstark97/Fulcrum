@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
+import colors from '../utils/colors';
 
 const FilmDetailScreen = ( { route } ) => {
     const [film, setFilm] = useState({});
@@ -17,5 +18,11 @@ const FilmDetailScreen = ( { route } ) => {
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: colors.charade,
+    }
+});
 
 export default FilmDetailScreen;

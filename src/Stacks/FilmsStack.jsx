@@ -2,6 +2,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import FilmsScreen from "../Screens/FilmsScreen";
 import FilmDetailScreen from "../Screens/FilmDetailScreen";
+import colors from "../utils/colors";
+
 const Stack = createStackNavigator();
 
 const FilmsStack = () => {
@@ -10,10 +12,10 @@ const FilmsStack = () => {
         <Stack.Navigator screenOptions={{
             title: "Star Wars Films",
             headerStyle: {
-                backgroundColor: "#20252c",
-                shadowColor: "#20252c",
+                backgroundColor: colors.blackPearl,
+                shadowColor: colors.blackPearl,
             },
-            headerTintColor: "#fff"
+            headerTintColor: colors.white
 
         }}> 
             <Stack.Screen 
